@@ -12,6 +12,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
 
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        if checkDND() {
+            print("STATUS: Do Not Disturb is enabled")
+            exit(1)
+        }
+        exit(0)
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application

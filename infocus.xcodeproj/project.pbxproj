@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		41BA9EBE26F0C07500A78F80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */; };
-		41BA9EC026F0C07500A78F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BA9EBF26F0C07500A78F80 /* Assets.xcassets */; };
 		41BA9EC326F0C07500A78F80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA9EC126F0C07500A78F80 /* MainMenu.xib */; };
 		41BA9ECD26F0C07500A78F80 /* infocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ECC26F0C07500A78F80 /* infocusTests.swift */; };
 		41BA9ED726F0C07500A78F80 /* infocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ED626F0C07500A78F80 /* infocusUITests.swift */; };
 		41BA9ED926F0C07500A78F80 /* infocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ED826F0C07500A78F80 /* infocusUITestsLaunchTests.swift */; };
+		41BA9EE726F0C0A100A78F80 /* checkDND.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9EE626F0C0A100A78F80 /* checkDND.swift */; };
+		41BA9EEB26F0C56800A78F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BA9EEA26F0C56800A78F80 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +36,15 @@
 /* Begin PBXFileReference section */
 		41BA9EBA26F0C07500A78F80 /* infocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41BA9EBF26F0C07500A78F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41BA9EC226F0C07500A78F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		41BA9EC826F0C07500A78F80 /* infocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infocusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BA9ECC26F0C07500A78F80 /* infocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infocusTests.swift; sourceTree = "<group>"; };
 		41BA9ED226F0C07500A78F80 /* infocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BA9ED626F0C07500A78F80 /* infocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infocusUITests.swift; sourceTree = "<group>"; };
 		41BA9ED826F0C07500A78F80 /* infocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41BA9EE526F0C08800A78F80 /* infocus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = infocus.entitlements; sourceTree = "<group>"; };
+		41BA9EE626F0C0A100A78F80 /* checkDND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkDND.swift; sourceTree = "<group>"; };
+		41BA9EEA26F0C56800A78F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +95,11 @@
 		41BA9EBC26F0C07500A78F80 /* infocus */ = {
 			isa = PBXGroup;
 			children = (
+				41BA9EE526F0C08800A78F80 /* infocus.entitlements */,
 				41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */,
-				41BA9EBF26F0C07500A78F80 /* Assets.xcassets */,
+				41BA9EEA26F0C56800A78F80 /* Assets.xcassets */,
 				41BA9EC126F0C07500A78F80 /* MainMenu.xib */,
+				41BA9EE626F0C0A100A78F80 /* checkDND.swift */,
 			);
 			path = infocus;
 			sourceTree = "<group>";
@@ -196,7 +201,7 @@
 				};
 			};
 			buildConfigurationList = 41BA9EB526F0C07500A78F80 /* Build configuration list for PBXProject "infocus" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,7 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41BA9EC026F0C07500A78F80 /* Assets.xcassets in Resources */,
+				41BA9EEB26F0C56800A78F80 /* Assets.xcassets in Resources */,
 				41BA9EC326F0C07500A78F80 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41BA9EBE26F0C07500A78F80 /* AppDelegate.swift in Sources */,
+				41BA9EE726F0C0A100A78F80 /* checkDND.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = infocus/infocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -429,6 +436,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.csiro.infocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = infocus/infocus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +466,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.csiro.infocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
