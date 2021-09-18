@@ -1,35 +1,30 @@
 //
-//  checkDND.swift
-//  checkDND
+//  checkDNDcli.swift
+//  infocuscli
 //
-//  Created by Bart Reardon on 14/9/21.
+//  Created by Bart Reardon on 18/9/21.
 //
 
 import Foundation
-import Intents
 import SystemConfiguration
 
-
-func checkDND() -> Bool {
+func checkDNDcli() -> Bool {
 
     if #available(macOS 12.0, *) {
         // Request authorization to check Focus Status
         
         print("This version is not supported under macOS 12 or above. Use the app bundle instead")
         
-        INFocusStatusCenter.default.requestAuthorization { status in
+        //INFocusStatusCenter.default.requestAuthorization { status in
 
-        }
+        //}
         
-        let focusStatusisFocused = INFocusStatusCenter.default.focusStatus.isFocused ?? false
+        //let focusStatusisFocused = INFocusStatusCenter.default.focusStatus.isFocused ?? false
         
-        return focusStatusisFocused
+        //return focusStatusisFocused
         
     } else {
-        
-        print("This version is not supported under macOS 11 or older. Use the cli utility instead")
-        
-        /*
+                
         // Fallback on earlier versions
         print("checking older version")
         
@@ -63,7 +58,6 @@ func checkDND() -> Bool {
         } catch {
             print("DND Prefs unavailable")
         }
-         */
     }
     return false
 }

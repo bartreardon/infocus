@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414B9ABC26F587FD000505B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B9AB526F58671000505B3 /* main.swift */; };
+		414B9ABE26F5C423000505B3 /* checkDNDcli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B9ABD26F5C423000505B3 /* checkDNDcli.swift */; };
+		414B9AC026F5C492000505B3 /* plistFromData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B9ABF26F5C492000505B3 /* plistFromData.swift */; };
+		414B9AC126F5C492000505B3 /* plistFromData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B9ABF26F5C492000505B3 /* plistFromData.swift */; };
+		4166B65726F0C4F20050ED29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4166B65626F0C4F20050ED29 /* Assets.xcassets */; };
 		41BA9EBE26F0C07500A78F80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */; };
 		41BA9EC326F0C07500A78F80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA9EC126F0C07500A78F80 /* MainMenu.xib */; };
 		41BA9ECD26F0C07500A78F80 /* infocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ECC26F0C07500A78F80 /* infocusTests.swift */; };
 		41BA9ED726F0C07500A78F80 /* infocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ED626F0C07500A78F80 /* infocusUITests.swift */; };
 		41BA9ED926F0C07500A78F80 /* infocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9ED826F0C07500A78F80 /* infocusUITestsLaunchTests.swift */; };
 		41BA9EE726F0C0A100A78F80 /* checkDND.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA9EE626F0C0A100A78F80 /* checkDND.swift */; };
-		41BA9EEB26F0C56800A78F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BA9EEA26F0C56800A78F80 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		414B9AB126F58671000505B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		414B9AB326F58671000505B3 /* infocuscli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = infocuscli; sourceTree = BUILT_PRODUCTS_DIR; };
+		414B9AB526F58671000505B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		414B9ABD26F5C423000505B3 /* checkDNDcli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkDNDcli.swift; sourceTree = "<group>"; };
+		414B9ABF26F5C492000505B3 /* plistFromData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plistFromData.swift; sourceTree = "<group>"; };
+		4166B65626F0C4F20050ED29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41BA9EBA26F0C07500A78F80 /* infocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = infocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41BA9EC226F0C07500A78F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -44,10 +65,16 @@
 		41BA9ED826F0C07500A78F80 /* infocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		41BA9EE526F0C08800A78F80 /* infocus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = infocus.entitlements; sourceTree = "<group>"; };
 		41BA9EE626F0C0A100A78F80 /* checkDND.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkDND.swift; sourceTree = "<group>"; };
-		41BA9EEA26F0C56800A78F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		414B9AB026F58671000505B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41BA9EB726F0C07500A78F80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414B9AB426F58671000505B3 /* infocuscli */ = {
+			isa = PBXGroup;
+			children = (
+				414B9AB526F58671000505B3 /* main.swift */,
+			);
+			path = infocuscli;
+			sourceTree = "<group>";
+		};
 		41BA9EB126F0C07500A78F80 = {
 			isa = PBXGroup;
 			children = (
 				41BA9EBC26F0C07500A78F80 /* infocus */,
 				41BA9ECB26F0C07500A78F80 /* infocusTests */,
 				41BA9ED526F0C07500A78F80 /* infocusUITests */,
+				414B9AB426F58671000505B3 /* infocuscli */,
 				41BA9EBB26F0C07500A78F80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +124,7 @@
 				41BA9EBA26F0C07500A78F80 /* infocus.app */,
 				41BA9EC826F0C07500A78F80 /* infocusTests.xctest */,
 				41BA9ED226F0C07500A78F80 /* infocusUITests.xctest */,
+				414B9AB326F58671000505B3 /* infocuscli */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +134,11 @@
 			children = (
 				41BA9EE526F0C08800A78F80 /* infocus.entitlements */,
 				41BA9EBD26F0C07500A78F80 /* AppDelegate.swift */,
-				41BA9EEA26F0C56800A78F80 /* Assets.xcassets */,
+				4166B65626F0C4F20050ED29 /* Assets.xcassets */,
 				41BA9EC126F0C07500A78F80 /* MainMenu.xib */,
 				41BA9EE626F0C0A100A78F80 /* checkDND.swift */,
+				414B9ABF26F5C492000505B3 /* plistFromData.swift */,
+				414B9ABD26F5C423000505B3 /* checkDNDcli.swift */,
 			);
 			path = infocus;
 			sourceTree = "<group>";
@@ -124,6 +163,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		414B9AB226F58671000505B3 /* infocuscli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414B9AB926F58671000505B3 /* Build configuration list for PBXNativeTarget "infocuscli" */;
+			buildPhases = (
+				414B9AAF26F58671000505B3 /* Sources */,
+				414B9AB026F58671000505B3 /* Frameworks */,
+				414B9AB126F58671000505B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = infocuscli;
+			productName = infocuscli;
+			productReference = 414B9AB326F58671000505B3 /* infocuscli */;
+			productType = "com.apple.product-type.tool";
+		};
 		41BA9EB926F0C07500A78F80 /* infocus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41BA9EDC26F0C07500A78F80 /* Build configuration list for PBXNativeTarget "infocus" */;
@@ -187,6 +243,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					414B9AB226F58671000505B3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					41BA9EB926F0C07500A78F80 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -216,6 +275,7 @@
 				41BA9EB926F0C07500A78F80 /* infocus */,
 				41BA9EC726F0C07500A78F80 /* infocusTests */,
 				41BA9ED126F0C07500A78F80 /* infocusUITests */,
+				414B9AB226F58671000505B3 /* infocuscli */,
 			);
 		};
 /* End PBXProject section */
@@ -225,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41BA9EEB26F0C56800A78F80 /* Assets.xcassets in Resources */,
+				4166B65726F0C4F20050ED29 /* Assets.xcassets in Resources */,
 				41BA9EC326F0C07500A78F80 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,11 +307,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		414B9AAF26F58671000505B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414B9ABC26F587FD000505B3 /* main.swift in Sources */,
+				414B9AC126F5C492000505B3 /* plistFromData.swift in Sources */,
+				414B9ABE26F5C423000505B3 /* checkDNDcli.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41BA9EB626F0C07500A78F80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41BA9EBE26F0C07500A78F80 /* AppDelegate.swift in Sources */,
+				414B9AC026F5C492000505B3 /* plistFromData.swift in Sources */,
 				41BA9EE726F0C0A100A78F80 /* checkDND.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +371,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		414B9AB726F58671000505B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8GJ2Y5Z9T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		414B9AB826F58671000505B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8GJ2Y5Z9T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		41BA9EDA26F0C07500A78F80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		414B9AB926F58671000505B3 /* Build configuration list for PBXNativeTarget "infocuscli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				414B9AB726F58671000505B3 /* Debug */,
+				414B9AB826F58671000505B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41BA9EB526F0C07500A78F80 /* Build configuration list for PBXProject "infocus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
