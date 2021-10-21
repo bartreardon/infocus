@@ -15,8 +15,6 @@ func checkDND() -> Bool {
     if #available(macOS 12.0, *) {
         // Request authorization to check Focus Status
         
-        print("This version is not supported under macOS 12 or above. Use the app bundle instead")
-        
         INFocusStatusCenter.default.requestAuthorization { status in
 
         }
@@ -27,43 +25,14 @@ func checkDND() -> Bool {
         
     } else {
         
-        print("This version is not supported under macOS 11 or older. Use the cli utility instead")
+        let bundlePath = Bundle.main.bundlePath
+                
+        let infocusCLIPath = "\(bundlePath)/Contents/Resources/infocuscli"
         
-        /*
-        // Fallback on earlier versions
-        print("checking older version")
+        print("Running the Infocus app bundle is not supported under macOS 11 or older due to the DND settings being not available from the app sandbox.")
+        print("Call the cli utility directly instead,which is located at:")
+        print(infocusCLIPath)
         
-        //let appBundle = Bundle.main.infoDictionary!["CFBundleIdentifier"] as! String
-        //let appContainer : String = "/Library/Containers/\(appBundle)/Data"
-        
-        let consoleUser = SCDynamicStoreCopyConsoleUser(nil, nil , nil)
-        let consoleUserHomeDir = FileManager.default.homeDirectory(forUser: consoleUser! as String)?.path ?? ""
-        //let realHomeDir = consoleUserHomeDir.replacingOccurrences(of: appContainer, with: "")
-        
-        print("consoleUser \(consoleUser!)")
-        print("consoleUserHomeDir \(consoleUserHomeDir)")
-        //print("realhomedir \(realHomeDir)")
-        //print("bundle \(appBundle)")
-        
-        
-        let ncprefsUrl = URL(
-            fileURLWithPath: String("\(consoleUserHomeDir)/Library/Preferences/com.apple.ncprefs.plist")
-        )
-        
-        print(ncprefsUrl)
-        
-        do {
-            let prefsList = try plistFromData(try Data(contentsOf: ncprefsUrl))
-            let dndPrefsData = prefsList["dnd_prefs"] as! Data
-            let dndPrefsList = try plistFromData(dndPrefsData)
-            
-            if let userPref = dndPrefsList["userPref"] as? [String:Any] {
-                return userPref["enabled"] as! Bool
-            }
-        } catch {
-            print("DND Prefs unavailable")
-        }
-         */
     }
     return false
 }

@@ -20,6 +20,20 @@
                ReferencedContainer = "container:infocus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "414B9AB226F58671000505B3"
+               BuildableName = "infocuscli"
+               BlueprintName = "infocuscli"
+               ReferencedContainer = "container:infocus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
