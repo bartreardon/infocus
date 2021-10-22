@@ -4,7 +4,7 @@
 
 ## What
 
-Small app for Mac Admins that checks focus status under macOS 12 and can be used to add Do Not Sisturb support to management scripts.
+Small app for Mac Admins that checks focus status under macOS 12 and can be used to add Do Not Disturb support to management scripts.
 
 Infocus runs from the command line. If the user has a Focus mode set, infocus exits with code 1, otherwise exits with code 0
 
