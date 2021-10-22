@@ -19,3 +19,30 @@ Because you're a nice #MacAdmin that doesn't want to disturb your users with som
 In theory this should run under macOS 10.15/11 (or earlier?...untested). Because of app sandbox rules that come with adding the communications notifications entitlements required for macOS 12, there is a seperate `infocuscli` binary included in the app bundle.
 
 
+## Demo
+
+The following script will run the correct version for the OS, check focus state and exit if focus/DND is enabled
+
+```zsh
+#!/bin/zsh
+
+infocusapppath="/Applications/Utilities/infocus.app"
+
+autoload is-at-least
+if is-at-least 12.0 $(sw_vers -productVersion); then
+    infocus="${infocusapppath}/Contents/MacOS/infocus"
+else
+    infocus="${infocusapppath}/Contents/Resources/infocuscli"
+fi
+
+# Running Infocus - if DND is enabled (i.e. exit code is 1), then exit
+if [[ -e ${infocus} ]]; then
+  ${infocus} || exit 0
+else
+  echo "Infocus is not installed - Do Not Disturb preferences will not be considered" 
+fi
+
+# ... continuing with the rest of the script if focus/DND is not enabled.
+# ...
+
+```
