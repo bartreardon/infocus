@@ -1,6 +1,6 @@
 # infocus
 
-[![swift-version](https://img.shields.io/badge/Swift-5.0-brightgreen)](https://developer.apple.com/documentation/swift) ![macos-version](https://img.shields.io/badge/macOS-10.15+-blue) [![xcode-version](https://img.shields.io/badge/xcode-13.1-red)](https://developer.apple.com/xcode/)
+[![swift-version](https://img.shields.io/badge/Swift-5.0-brightgreen)](https://developer.apple.com/documentation/swift) ![macos-version](https://img.shields.io/badge/macOS-11+-blue) [![xcode-version](https://img.shields.io/badge/xcode-13.1-red)](https://developer.apple.com/xcode/)
 
 ![install](https://user-images.githubusercontent.com/3598965/133254387-74923520-32c7-48c2-ad98-916ab2f77ad3.png)
 
