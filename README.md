@@ -18,7 +18,7 @@ Because you're a nice #MacAdmin that doesn't want to disturb your users with som
 
 ## How
 
-Through the Magic of Swift! on macOS 11 it jsut reads a local plist to get DND data. Under macOS 12 it uses the communications notifications entitlements but because of app sandbox rules that come with adding the communications notifications entitlements required for macOS 12, there is a seperate `infocuscli` binary included in the app bundle for use on macOS 11. Within the sandbox the app can't read the local plist. Fun.
+Through the Magic of Swift! on macOS 11 it reads a local plist to get DND data. Under macOS 12 it uses the communications notifications entitlements but because of app sandbox rules that come with adding the entitlements, required for macOS 12, there is a seperate `infocuscli` binary included in the app bundle for use on macOS 11. Within the sandbox the app can't read the local plist. Fun.
 
 
 ## Demo
