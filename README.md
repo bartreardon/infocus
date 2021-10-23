@@ -6,7 +6,7 @@
 
 ## What
 
-Small app for Mac Admins that checks focus status under macOS 12 and can be used to add Do Not Disturb support to management scripts.
+Small app for Mac Admins that checks focus status under macOS 11 and 12 and can be used to add Do Not Disturb support to management scripts.
 
 Infocus runs from the command line. If the user has a Focus mode set, infocus exits with code 1, otherwise exits with code 0
 
@@ -18,7 +18,7 @@ Because you're a nice #MacAdmin that doesn't want to disturb your users with som
 
 ## How
 
-In theory this should run under macOS 10.15/11 (or earlier?...untested). Because of app sandbox rules that come with adding the communications notifications entitlements required for macOS 12, there is a seperate `infocuscli` binary included in the app bundle.
+Through the Magic of Swift! on macOS 11 it jsut reads a local plist to get DND data. Under macOS 12 it uses the communications notifications entitlements but because of app sandbox rules that come with adding the communications notifications entitlements required for macOS 12, there is a seperate `infocuscli` binary included in the app bundle for use on macOS 11. Within the sandbox the app can't read the local plist. Fun.
 
 
 ## Demo
