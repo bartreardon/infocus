@@ -48,3 +48,9 @@ fi
 # ...
 
 ```
+
+## Compiling
+
+Requires Xcode 13.1 or newer, which includes the correct frameworks for macOS 12.
+
+After building, run `codesign --force --deep --sign - infocus.app` on the app bundle to fix the signature for distribution.
