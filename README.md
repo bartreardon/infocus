@@ -14,7 +14,7 @@ For a pre-built preview, check the [Releases](https://github.com/bartreardon/inf
 
 ## Why
 
-Because you're a nice #MacAdmin that doesn't want to disturb your users with some popup or other event that ordinarily wouldn't adhear to macOS Notification framework.
+Because you're a nice #MacAdmin that doesn't want to disturb your users with some popup or other event that ordinarily wouldn't adhere to macOS Notification framework.
 
 ## How
 
